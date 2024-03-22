@@ -23,7 +23,7 @@
     "annotation_codebook_url": "",
 
     "data_files": [
-       "data_files/posts_sample_depth3.tsv"
+       "data_files/posts_1ksample_depth3.tsv"
     ],
 
     "item_properties": {
@@ -63,7 +63,7 @@
       "output_filename": 'task_assignment.json',
       "sampling_strategy": 'random',
       "labels_per_instance": 2,
-      "instance_per_annotator": 50,
+      "instance_per_annotator": 235,
       "test_question_per_annotator": 0, # you must set up the test question in surveyflow to use this function
 
       "users": [  ],
@@ -81,15 +81,16 @@
             "name": "Email Act/Intent",
             "description": "Email Act/Intent",
             "labels": [
-                "Request: Asks (or orders) the recipient to perform some activity (includes questions)",
-                "Propose: Message proposes an activity like a meeting",
-                "Commit: Commits the sender to some action, or confirms intent to comply with some previously described course of action",
-                "Deliver: Delivers something, e.g., some information, a PowerPoint presentation (includes answers)",
-                "Amend: Suggested modification of an already-proposed task e.g., propose new meeting time",
-                "Refuse: E.g., reject a meeting or task",
-                "Remind",
-                "Greet: Thanks, congrats, etc.",
-                "Other"
+                {"name": "Request", "tooltip": "Asks (or orders) the recipient to perform some activity. A question is also considered a request for delivery of information."},
+                {"name": "Propose", "tooltip": "Proposes a joint activity, asks the recipient to perform some activity, and commits the sender as well, provided the recipient agrees to the request."},
+                {"name": "Commit/Agree", "tooltip": "Commits the sender to some future course of action, or confirms the sender’s intent to comply with some previously described course of action."},
+                {"name": "Deliver/Informative", "tooltip": "Delivers something, e.g., information, a presentation, a website URL, the answer to a question, or an opinion."},
+                {"name": "Amend", "tooltip": "Amends an earlier proposal. Like a proposal, the message involves both a commitment and a request. However, while a proposal is associated with a new task, an amendment is a suggested modification of an already-proposed task."},
+                {"name": "Refuse", "tooltip": "Rejects a meeting/action/task or declines an invitation/proposal."},
+                {"name": "Introduction", "tooltip": "Someone introducing themselves."},
+                {"name": "Remind", "tooltip": "Reminds recipients of coming deadlines or threats to keep commitments."},
+                {"name": "Thank you/Welcome", "tooltip": "Express gratitude, congratulate, apologize, or welcome the recipient(s)."},
+                {"name": "Other"}
             ],
 
             # If true, the field will have an optional text box the user can
@@ -111,11 +112,12 @@
             "name": "Sender Expectation",
             "description": "Sender Expectation",
             "labels": [
-                "Ignore",
-                "Accountable non-answer",
-                "Postpone reply",
-                "Immediate reply",
-                "Other"
+                {"name": "Ignore", "tooltip": "There is no realistic expectation that the recipients will properly read the email, let alone respond to them."},
+                {"name": "Accountable non-answer", "tooltip": "Recipient is expected to engage with the message or its attachments, but there is no reply required."},
+                {"name": "Postponed reply", "tooltip": "The message requires a reply but not immediately."},
+                {"name": "Immediate reply", "tooltip": "The message requires a reply as soon as possible."},
+                {"name": "Other"}
+
             ],
 
             # If true, the field will have an optional text box the user can
