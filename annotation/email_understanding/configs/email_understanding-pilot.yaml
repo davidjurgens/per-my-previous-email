@@ -8,7 +8,7 @@
     # Potato will write the annotation file for all annotations to this
     # directory, as well as per-annotator output files and state information
     # necessary to restart annotation.
-    "output_annotation_dir": "annotation_output/full/",
+    "output_annotation_dir": "annotation_output/pilot/",
 
     # The output format for the all-annotator data. Allowed formats are:
     # * jsonl
@@ -23,7 +23,7 @@
     "annotation_codebook_url": "",
 
     "data_files": [
-       "data_files/1900_sample.csv"
+       "data_files/100_sample.csv"
     ],
 
     "item_properties": {
@@ -62,8 +62,8 @@
       "on": True,
       "output_filename": 'task_assignment.json',
       "sampling_strategy": 'random',
-      "labels_per_instance": 2,
-      "instance_per_annotator": 235,
+      "labels_per_instance": 3,
+      "instance_per_annotator": 20,
       "test_question_per_annotator": 0, # you must set up the test question in surveyflow to use this function
 
       "users": [  ],
@@ -112,11 +112,18 @@
             "name": "Sender Expectation",
             "description": "Sender Expectation",
             "labels": [
-                {"name": "[Q] Response Not-Expected", "tooltip": "There is no realistic expectation that the recipients will properly read the email, let alone respond to them.", "key_value": "q"},
-                {"name": "[W] Response Expected", "tooltip": "Recipient is expected to engage with the message or its attachments", "key_value": "w"},
-                {"name": "Spam or empty message"}
+                {"name": "[Q] Ignore", "tooltip": "There is no realistic expectation that the recipients will properly read the email, let alone respond to them.", "key_value": "q"},
+                {"name": "[W] Accountable non-answer", "tooltip": "Recipient is expected to engage with the message or its attachments, but there is no reply required.", "key_value": "w"},
+                {"name": "[E] Postponed reply", "tooltip": "The message requires a reply but not immediately.", "key_value": "e"},
+                {"name": "[R] Immediate reply", "tooltip": "The message requires a reply as soon as possible.", "key_value": "r"},
+                {"name": "Other"}
 
             ],
+
+            # If true, the field will have an optional text box the user can
+            'has_free_response': {
+               "instruction": 'Please specify:',
+            },
 
             # adding requirements for labels, when "required" is True, the annotators will be asked to finish the current instance to proceed
             "label_requirement": {"required":True},
