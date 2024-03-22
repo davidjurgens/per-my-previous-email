@@ -23,19 +23,19 @@
     "annotation_codebook_url": "",
 
     "data_files": [
-       "data_files/politeness_100.csv"
+       "data_files/posts_sample_depth3.tsv"
     ],
 
     "item_properties": {
-        "id_key": "id",
-        "text_key": "text",
+        "id_key": "message_id",
+        "text_key": "message_body",
     },
 
   #list_as_text is used when the input text is actually a list of texts, usually used for best-worst-scaling
-    "list_as_text": {
-      "text_list_prefix_type": 'None',
-      "horizontal": True,
-    },
+  #"list_as_text": {
+  #    "text_list_prefix_type": 'None',
+  #    "horizontal": True,
+  #  },
 
     "user_config": {
 
@@ -63,7 +63,7 @@
       "output_filename": 'task_assignment.json',
       "sampling_strategy": 'random',
       "labels_per_instance": 2,
-      "instance_per_annotator": 5,
+      "instance_per_annotator": 50,
       "test_question_per_annotator": 0, # you must set up the test question in surveyflow to use this function
 
       "users": [  ],
@@ -108,8 +108,8 @@
         },
         {
             "annotation_type": "radio",
-            "name": "Email Act/Intent",
-            "description": "Email Act/Intent",
+            "name": "Sender Expectation",
+            "description": "Sender Expectation",
             "labels": [
                 "Ignore",
                 "Accountable non-answer",
