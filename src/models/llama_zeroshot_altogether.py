@@ -16,6 +16,7 @@ Email: {email_text}'''
 
 llm = LLM(model=model_dir)  # Create an LLM.
 data_df = pd.read_csv(data_dir)
+data_df = data_df[data_df["split"] == "test"]
 email_text_list = data_df["cleaned_text"]
 
 answer_prompts = []
@@ -82,5 +83,7 @@ for key in prediction_df_list:
     metrics[intent_name]['recall'] = recall_score(y_test_local, y_pred_local)
     metrics[intent_name]['f1'] = f1_score(y_test_local, y_pred_local)
 
-print(pd.DataFrame.from_dict(metrics))
+metrics_df = pd.DataFrame.from_dict(metrics)
+print(metrics_df)
+metrics_df.to_csv("llama_zeroshot_altogether_metrics.csv", index=True)
 data_df.to_csv("llama_zeroshot_altogether.csv", index=False)

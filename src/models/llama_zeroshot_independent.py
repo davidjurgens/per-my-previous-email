@@ -12,21 +12,22 @@ llama_template = '''[INST]
 Email: {email_text}
 [/INST]Answer:'''
 
-user_prompt_dict = {"Request": "You will be given an Email text. Is the sender sending a request or order for the recipient to perform some activity? a question is also considered a request for delivery of information. Please respond with only yes or no.", 
-                    "Propose": "You will be given an Email text. Is the sender proposing a joint activity, i.e., asks the recipient to perform some activity and commits the sender as well, provided the recipient agrees to the request? Please respond with only yes or no.", 
-                    "Commit/Agree": "You will be given an Email text. Is the email committing the sender to some future course of action or confirming the sender’s intent to comply with some previously described course of action? Please respond with only yes or no.",
-                    "Deliver/Informative": "You will be given an Email text. Does deliver something? e.g., some information or provide an opinion. Please respond with only yes or no.",
-                    "Amend": "You will be given an Email text. Does the email amend an earlier proposal and involve both a commitment and a request? An amendment is a suggested modification of an already-proposed task. Please respond with only yes or no.",
-                    "Refuse": "You will be given an Email text. Does the email reject a meeting/action/task or decline an invitation/proposal? Please respond with only yes or no.",
-                    "Introduction": "You will be given an Email text. Does the email consist of someone introcucing themselves? Please respond with only yes or no.",
-                    "Remind": "You will be given an Email text. Does the email aim to remind recipients of coming deadlines or threats to keep commitment? Please respond with only yes or no.",
-                    "Thank you/Welcome": "You will be given an Email text. Does the email thank, congratulate, apologize, or welcome the recipients? Please respond with only yes or no.",
-                    "spam":"You will be given an Email text. Could the email be categorized as spam or has an empty body? Please respond with only yes or no.",
-                    "Sender Expectation": "You will be given an Email text. Does the email sender expect a response? Please respond with only yes or no."
+user_prompt_dict = {"Request": "You will be given an Email text. Answer yes if the sender is sending a request or order for the recipient to perform some activity, otherwise answer no. A question is considered a request for delivery of information. Please respond with only yes or no.", 
+                    "Propose": "You will be given an Email text. Answer yes if the sender is proposing a joint activity, e.g., asks the recipient to perform some activity or suggests a joint meeting, otherwise answer no. Please respond with only yes or no.", 
+                    "Commit/Agree": "You will be given an Email text. Answer yes if the email is committing to some future actions or confirming to comply with some previously described actions, e.g., confirming to do a job, otherwise answer no. Please respond with only yes or no.",
+                    "Deliver/Informative": "You will be given an Email text. Answer yes if the email is delivering or providing information and opinion, otherwise answer no. Please respond with only yes or no.",
+                    "Amend": "You will be given an Email text. Answer yes if the email is amending an earlier proposal, otherwise answer no. An amendment is a suggested modification of an already-proposed task. Please respond with only yes or no.",
+                    "Refuse": "You will be given an Email text. Answer yes if the email rejects a meeting/action/task or declines an invitation/proposal, otherwise answer no. Please respond with only yes or no.",
+                    "Introduction": "You will be given an Email text. Answer yes if the email is written by someone to introduce themselves, otherwise answer no. Please respond with only yes or no.",
+                    "Remind": "You will be given an Email text. Answer yes if the email is reminding recipients of coming deadlines or to keep commitment, otherwise answer no. Please respond with only yes or no.",
+                    "Thank you/Welcome": "You will be given an Email text. Answer yes if the email is intended to thank, congratulate, apologize, or welcome the recipients, otherwise answer no. Please respond with only yes or no.",
+                    "spam":"You will be given an Email text. Answer yes if the email is spam or has an empty body, otherwise answer no. Please respond with only yes or no.",
+                    "Sender Expectation": "You will be given an Email text. Answer yes if the email sender expects an explicit email in reply, otherwise answer no. Please respond with only yes or no."
                     }
 
 llm = LLM(model=model_dir)  # Create an LLM.
 data_df = pd.read_csv(data_dir)
+data_df = data_df[data_df["split"] == "test"]
 email_text_list = data_df["cleaned_text"]
 
 prediction_df_list = {}
@@ -47,7 +48,7 @@ for intent_name in tqdm(user_prompt_dict):
         else:
             prediction_df_list["pred_Act:::"+intent_name].append(0)
             if "no" not in text.lower():
-                print(i)
+                print(text)
                 errors += 1
     
 
@@ -66,11 +67,13 @@ for key in prediction_df_list:
         y_test_local = data_df["label_Act:::"+intent_name]
 
     y_pred_local = data_df["pred_Act:::"+intent_name]
-    metrics[intent_name]['accuracy'] = accuracy_score(y_test_local, y_pred_local)
+
     metrics[intent_name]['precision'] = precision_score(y_test_local, y_pred_local)
     metrics[intent_name]['recall'] = recall_score(y_test_local, y_pred_local)
     metrics[intent_name]['f1'] = f1_score(y_test_local, y_pred_local)
 
 print("Errors: " + str(errors))
-print(pd.DataFrame.from_dict(metrics))
+metrics_df = pd.DataFrame.from_dict(metrics)
+print(metrics_df)
+metrics_df.to_csv("llama_zeroshot_independent_metrics.csv", index=True)
 data_df.to_csv("llama_zeroshot_independent.csv", index=False)
