@@ -8,7 +8,7 @@
     # Potato will write the annotation file for all annotations to this
     # directory, as well as per-annotator output files and state information
     # necessary to restart annotation.
-    "output_annotation_dir": "annotation_output/pilot/",
+    "output_annotation_dir": "annotation_output/pilot-2/",
 
     # The output format for the all-annotator data. Allowed formats are:
     # * jsonl
@@ -27,8 +27,8 @@
     ],
 
     "item_properties": {
-        "id_key": "id",
-        "text_key": "text",
+        "id_key": "message_id",
+        "text_key": "message_body_clean",
     },
 
   #list_as_text is used when the input text is actually a list of texts, usually used for best-worst-scaling
