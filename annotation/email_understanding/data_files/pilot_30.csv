@@ -1,0 +1,350 @@
+message_id,message_body_clean
+<iO86qexnjF2dH6Cs@example.com>,"Why do all of that?  
+
+Just submit this to the CRB: 
+
+Any 500cc water cooled 2 cycle sled engine, stock ECU/ignitions, any cvt 
+clutche/s.
+Restrictions: 38 carbs, 2 into one manifold,  SSx gas test...nothing else.
+Weight 825#'s.
+
+No concerns over manufactuers decisions, larger engine supply, and a real easy 
+post race tech. Now that's a real tuners class!
+
+Betcha we'd have a lot more interest in F5...and a really quick ride. 
+ <gmane_tag_closing> <gmane_tag_personal_signature> <gmane_tag_quotation> <gmane_tag_personal_signature> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<LMJ1qyx+LqmsngTP@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> Well, that doesn't seem correct.  The Germans *are* the Scenario Attacker
+(because the SSR defines the British as Scenario Defender; you can never have
+one without the other), which entitles them to use Cloaking per the following
+Q&A:
+
+E1.41 If a side is designated by SSR as the Scenario Attacker, can Cloaking
+still be used even if all his forces set up on board?
+A. Yes. [An97; Mw]
+
+E1.411 vaguely implies the opposite but it is a particularly poorly-written
+rule (a strong effort given how little it actually says).  Given the above
+Q&A, it should be reworded to effectively delete the first sentence --
+offboard setup is not required for a *designated* Scenario Attacker.
+
+Keep in mind that there are only two ways for a side to be classed as
+""Scenario Attacker"" (or ""Defender""): either it fulfils the criteria
+established in the Index, or an SSR specifies it.  Regardless, per the Index
+definition, you cannot have one without the other.
+
+It seems as though that Perry believes the SSR for PB2 is to give the British
+the advantages (but not the disadvantages) of being Scenario Defender.  If so
+it should have been worded differently if the intent was also to prevent the
+Germans from getting the advantages of being Scenario Attacker.  (Note that if
+SSR 2 hadn't mentioned that the British are Scenario Defender, neither side
+would be, because they don't fulfil the Index criteria.)
+
+ <gmane_tag_quotation> That's perfectly consistent with the above Q&A.
+
+ <gmane_tag_quotation> No, you were given a bad ruling for PB2.  (Or PB2 is in need of errata.)
+
+ <gmane_tag_visual_separator> <gmane_tag_personal_signature> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<fZ37B54xEIPqGKPB@example.com>,"Another update... Nexuiz is (tentatively) up! I haven't had a chance to test
+it yet myself, but so far everything looks good. If somebody could connect
+and then drop me an email to let me know if it's working or not, that would
+be fantastic.
+
+*Nexuiz* (2.4.2)
+ <gmane_tag_log_data> <gmane_tag_tabular> If you're using Ubuntu/Debian, you won't have the latest version of Nexuiz.
+Just grab the debs from Intrepid/Lenny; there are no new dependencies.
+
+ <gmane_tag_quotation_marker> <gmane_tag_quotation>"
+<t9ZBepY9tWf76G1+@example.com>,"Great job Nextgens  :)
+
+ <gmane_tag_log_data> How come I didn't see this revision in the cvs mailinglist?  I
+actually found the new freenet-ext.jar build while browsing the
+download directory.
+
+Is it something on the server end or gmail's?  Hmm, gmane doesn't have
+it either so it must be something on the build server??
+
+I see quite a few revisions missing from the cvs mailinglist
+rev 9618-9621, 9628, 9630-9635, 9637-9641, 9643-9663, 9666, and many, many more.
+
+Also the current freenet-ext.jar claims to be r9584 in the log but
+r9584 did not fix this, so there are changes happening to the code
+without revisions taking place or is r9584 a tag that is actually
+editted in the code?
+
+Should we be concerned about any of this?
+
+
+
+ <gmane_tag_visual_separator> <gmane_tag_personal_signature> death, your right to say it. - Voltaire"
+<000601c73550$ae6a0cf0$6401a8c0@normadesktop>,"John I played Contract Bridge tonight, and brought the subject up, and one 
+of the ladies also heard of it.  I also asked JT about it, he had not, and 
+laughed at me.  I am going to try it on another one of my species and just 
+see what happens.  What is Bleach made of anyway?  Norma
+ <gmane_tag_quotation_marker> <gmane_tag_inline_headers> <gmane_tag_quotation> <gmane_tag_mua_signature>"
+<R1lRnqBrlMykID21@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_log_data> Vendor F
+
+ <gmane_tag_closing>"
+<Nsp5YyO5vq138pFT@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> True.  If only there was something like that old site, what was it
+called, the Dinosauricon.  If we could just remember who used to run
+that, maybe we could get him to breathe some life back into it?
+
+ <gmane_tag_visual_separator> <gmane_tag_personal_signature> 	 rules?' but rather `does it work?'"" -- Sella Rush."
+<001601c87a72$d183df00$c6fba8c0@mohammadkhan>,"Check the port the c3270 emulator is trying to connect vs the port at which 
+Hercules is expecting connection. The configuration file will tell you the 
+port at which Hercules is listening for terminal connections (normally port 
+3270). The emulators usually default to a different port.
+ <gmane_tag_closing> <gmane_tag_quotation_marker> <gmane_tag_quotation>"
+<wv74qqKReQYHCtZQ@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> That is not an in-wiki fix for the problem.  While I agree that it would be
+useful, major modifications to MediaWiki are outside the immediate tactical
+scope... Unless you know PHP a lot more fluently than I do and have commit
+access to the source ;-)
+
+
+ <gmane_tag_visual_separator> <gmane_tag_personal_signature> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<QtHJfefoTe6ix6c7@example.com>,<gmane_tag_quotation_marker> <gmane_tag_quotation>
+<E4uX/6AmBzpgD1MM@example.com>,<gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_visual_separator>
+<r8ClCqltV4msOCVK@example.com>,"<gmane_tag_salutation> i have a big problem here.
+
+I have a backup hard drive with an ext3 partition.
+One of my friends made a backup on it with some gentoo portage
+things.
+
+Now that he is gone i wanted to delete the 4 files which are taking
+8GB away but i am not allowed to do so.
+
+And it is really weired.
+
+Here is the output from ls -lisa in the directory:
+2294475 4 drwsrwsrwt     1 garfield   garfield   4096 2008-02-25 13:57 .
+ <gmane_tag_log_data> And sudo rm -v xs_colors.h gives me:
+ <gmane_tag_log_data> The same happens when i try to chmod or chown the files
+as sudo or user.
+
+The output of file xs_colors.h is:
+xs_colors.h: ERROR: invalid mode 074427
+
+I even tried to remove the file over the inode with
+find . i number -exec rm ...
+But i dont have the permissions :D
+
+So i unmounted the partition and started to check it with fdisk.
+It found a lot of errors to much for me, so i started fdisk -a.
+fdisk fiddled around for a while and and then died with the message
+that there are errors that have to be handled manually.
+But again fdisk without -a needs a 1000 user inputs or much more
+and i dont want to spend my afternoon sitting here and pressing y.
+
+
+Any ideas what else i could do despite reformatting the partition?
+
+
+ <gmane_tag_closing>"
+<Zr2LhsUhwh01rT+r@example.com>,"<gmane_tag_salutation> I used to get that problem earlier. The time dependent solver needs some inital value to begin with and doesnt like starting with 0 initial conditions. U can either put this value in the init tab of the subdomain physics for all subdomains and the other option is to solve the problem statically first and then use the static solution as the inital condition for the timestepping. This can be done using the solver manager.
+
+The problem i am facing is that the solver is unstable and converges for a while untill suddenly the nonlinear solver fails to converge. Also this doesnt happen for all values of current density, just in the middle range, as it works for lower currents where the system is working in the linear regions and for higher currents where it is in saturation.
+
+Please help...im out of ideas.
+
+ <gmane_tag_closing> <gmane_tag_quotation_marker> <gmane_tag_inline_headers>             Hi, I am facing a similar problem that the time dependent solver does
+
+not converge.
+
+
+
+I was running the 'nonisothermal flow' from the chemical engineering
+
+module model library, able to solve it when it is set at stationary,
+
+but error occur when it is set to time dependent. The error showed at
+
+'time 0: Failed to find consistent initial values. Last time step is
+
+not converged.'
+
+
+
+Any advice?
+
+
+
+ <gmane_tag_closing> <gmane_tag_quotation_marker> <gmane_tag_quotation>"
+<1TIHwiHQW9idDzdE@example.com>,"The original message was received at Sat, 15 Jul 2006 09:00:30 -0700
+ <gmane_tag_log_data> <gmane_tag_quotation_marker> <gmane_tag_log_data> <gmane_tag_quotation> <gmane_tag_log_data> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<JD6WSIAVEDjWBpjn@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> added these three lines to custom-kernel-confg and all is groovy now
+ <gmane_tag_quotation> you know that's pretty interesting. I've run into ulimit issues before with
+3rd party software and socket connections. although i was under the
+impression that it was the shell the software was executing the daemon
+process as that needed to be tuned (in my case /bin/sh had a pretty low
+network socket ulimit). I guess what I did not expect was that this is a
+kernel tunable, not a shell tunable (or atleast a tunable that is set in
+userspace) as I have used it in the past. so these kernel options effect all
+shell's, set limit's on resources out of the shell, or something else i'm
+missing? the man page for ulimit (1) is for ""Shell builtin commands"". Guess
+I need to read up on this a bit more.
+
+ <gmane_tag_closing> <gmane_tag_visual_separator> <gmane_tag_personal_signature>"
+<24cNkhGjJj+d7CMJ@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> MUST HAVE BEEN since i got mine in BOSTON back then.
+
+ <gmane_tag_closing>"
+<N8mx4yxEkD6UU5JU@example.com>,"<gmane_tag_tabular> With today's upgrade I get this when I do ls:
+
+ <gmane_tag_raw_code> <gmane_tag_log_data> <gmane_tag_raw_code> <gmane_tag_log_data> <gmane_tag_raw_code> <gmane_tag_log_data> <gmane_tag_raw_code> <gmane_tag_log_data> The LS_COLORS was set by ""dircolors -b"" of the former coreutils version.
+
+The new ls should silently ignore the ""hl"" value if it's obsoleted otherwise
+everybody will have this warning the day of the upgrade until they
+disconnect/reconnet.
+
+ <gmane_tag_section_heading> <gmane_tag_tabular> coreutils recommends no packages.
+
+coreutils suggests no packages.
+
+-- no debconf information"
+<ImeelJw6miAmCQBi@example.com>,"The CVs wont get much better ... sorry to disappoint :)   And ... you forgot
+to mention your location :D
+
+
+
+ <gmane_tag_quotation_marker> <gmane_tag_quotation>"
+<ewJ9itcqkcPU1mNI@example.com>,"I've sent a message some hours ago and committed the mistake of
+including it inside of an already started thread, don't know if
+someone read it.
+
+The details are in that thread but basically what I am looking for is
+a shopping cart that has flexibility with respect to the graphical
+layout of elements and their appearance  as well as the ability to
+extend the framework with custom functionalities.
+
+Don't have good experience with oscommerce because of the way the
+layout is set with tables, it doesn't give much freedom and couln't
+find good docs about it. Saw Zen Cart and it looks promising but have
+no experience on it.
+
+Listen to your suggestions.
+ <gmane_tag_closing> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<1OB409RSOqqf36Ls@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> I wonder why it took almost a year to post about this problem again.
+Didn't you try with a fresh profile the last time you posted? As a
+regular in this group you probably know that this is the best thing
+to try... It certainly works fine here with eSeaMonkey 1.1.3 (without
+any spoofing I get to the payment size), so it's just a settings
+problem on your side.
+
+Btw., ""JavaScript is enabled"" doesn't say anything really, there are
+already 6 different settings exposed under Advanced -> Scripts & Plugins
+in the Preferences, and from last time you know about the dom.*
+settings. But then it might be something else.
+ <gmane_tag_visual_separator> <gmane_tag_mua_signature> reply in                                    http://pmw-warpzilla.sf.net/
+newsgroup
+ <gmane_tag_mua_signature>"
+<023701c6065e$99605e80$0200a8c0@uberdrac>,"<gmane_tag_quotation> Unlucky mate I know it don't help but if I'd been of I could have whizzed 
+over this afternoon.
+
+Have fun all I'm off to work."
+<YIyVFi8FjhvMOWqF@example.com>,"I pop a Umph tablet http://try-umph.com/ with 100mg Caffeine into a
+20oz bottle of Gatorade at 430am, drain it down, and hit the bike soon
+thereafter. Fluid, some carbos and the same jolt as a cup of coffee.
+If I could find those bottles of pre-mixed Accelerade, I'd toss the
+tab into that instead. Guess I could mix it up the night before and
+pop it in the 'fridge...
+
+
+ <gmane_tag_visual_separator> <gmane_tag_mua_signature> <gmane_tag_visual_separator>"
+<Q6UhAq0y4pyCa4Mv@example.com>,"I should have asked openly, sorry
+
+ <gmane_tag_closing> <gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_salutation> I'll be happy to help you, but would you mind posting the questions on the
+users' list?   That way others can read my answers as well.  It'll also
+give your example a bit of publicity :-)
+
+Some short tips:
+* [[directory with files -> uploads:/Examples/hw-business-paper]]
+
+To rename a page:
+* Create a new page, copying the old information
+ <gmane_tag_log_data> <gmane_tag_closing> <gmane_tag_visual_separator> <gmane_tag_personal_signature> <gmane_tag_visual_separator> <gmane_tag_personal_signature>"
+<Xsn1dwA/hr76M9Fo@example.com>,<gmane_tag_tabular> <gmane_tag_closing> <gmane_tag_tabular> <gmane_tag_patch> <gmane_tag_tabular> <gmane_tag_patch>
+<b95hYDIcnLdzZ7kx@example.com>,"Gotcha.  Just didn't want anything falling through the cracks.  I 
+know the cracks are really small usually but just in case.  Oh and I 
+couldn't pass up a chance to say my bad joke...
+
+ <gmane_tag_closing> <gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_mua_signature> <gmane_tag_visual_separator>"
+<5o1PXpKIbRmxSop+@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> <gmane_tag_salutation> There lies the problem when trying to address proper
+advancement or EVen proper motor sizing needs as those
+parameters are almost never the same from one user to
+the next.  It's really like one big electric grab bag
+or box of chocolates with just about EVery flavor one
+could imagine.  With that said it gets tough trying to
+generalize without leaving someone out of the equation
+or EVen worse down a wrong path. I also try to not bog
+down the list with novella length postings 8^)
+
+ <gmane_tag_quotation> They still do on the 8's and 9's (at least the ones
+I've seen.  The ADC 8's are almost a mirror image to
+the their 9's as to the differences in degrees for
+opposite rotation.  While the eight's are set 10
+degrees for CCWDE and about half as much for CWDE the
+9's are set at 10 for CWDE and only about half that
+for CCWDE.  Both advances will get you the same RPM
+ <gmane_tag_log_data> degrees in both direction which throws another twist
+into the mix and shows how different motors are
+affected differently.
+
+Added to this, is my belief that all electric motors
+(okay well at least the DC ones) are female 8^) and
+they all have their own (lets call it personality) 8^o
+I mean EVen you racers don't have flashovers all that
+often these days and I've often pondered if it was
+some form of motor PMS, LMAO!!!  No different than
+when you want to go race but the ol' lady gets pissy
+and says ""I SAID YOU AIN""T RACING TONIGHT"" and shoots
+you that plasma bolt stare 8^(  Few if any of the ones
+I've seen have offered any real data as to why it
+decided to pitch a fit on that occassion while
+normally EVerythings good, other than it just decided
+to be a bitch and wreck a good time 8^o (just kidding
+now, no female hate mail)8^)
+
+In two years John and Tim have only had two major
+flashovers (at least major ones needing attention)
+over who knows how many times it got throttled.  The
+only common thing that I noticed was that on both
+occasions Woodburn and again last March was that both
+times it was with a brand new battery pack.  Not sure
+how it fits in but something I noticed.
+
+Anyway I'm just standing on the backs of all you guys
+who got us here and trying to see how much more we can
+squeeze out of them and guilty of having a little fun
+as I'm doing it.  Sorry about the cleats BTW, LMAO!
+8^P
+Got to run
+ <gmane_tag_closing> <gmane_tag_personal_signature> <gmane_tag_visual_separator> <gmane_tag_mua_signature>"
+<g4ZMbTBwugAdsy7z@example.com>,"<gmane_tag_salutation> I am using biomart with a postgres database (7.4).
+And all seem work perfectly with the count of the results but I can  
+not obtain a good table with an 'export' or a 'view all results'.
+
+When I see the log4 log, I can remark that the query is split in many  
+sql
+using LIMIT and OFFSET... So why not ...
+but I do not see an ORDER BY command and this parameter seems to be  
+necessary to obtain my good results...
+
+ <gmane_tag_raw_code> That is a problem with postgres versus MySQL (I do not have any  
+experience with MySQL) or a problem with my config ... or something  
+else ?
+
+Any suggestions
+ <gmane_tag_closing> <gmane_tag_visual_separator> <gmane_tag_personal_signature> <gmane_tag_tabular>    http://paramecium.cgm.cnrs-gif.fr/"
+<Vvx+60bY2xLVyVqg@example.com>,"<gmane_tag_quotation_marker> <gmane_tag_quotation> There is a more deep issue, i.e. qutecom is not using libpurple in a
+thread-safe way, which is causing a crash with the system library
+http://trac.qutecom.org/ticket/175
+
+Fix for that is not easy, and may require some time :(
+
+ <gmane_tag_closing>"
+<000001c63291$bce5c7a0$fIB9teZybLJkUXmS@example.com>,"Some one can tell me, how can i change the squirrelmail language to
+Spanish
+ 
+ <gmane_tag_closing> <gmane_tag_visual_separator> <gmane_tag_mua_signature> <gmane_tag_quotation_marker> <gmane_tag_visual_separator> <gmane_tag_personal_signature> <gmane_tag_mua_signature> y se considera que está limpio."
+<Tk8hf5XQsut2IfGk@example.com>,"<gmane_tag_quotation> ""5.2.  Conceptual Sending Algorithm"" explains how a host should behave
+in this case.
+
+ <gmane_tag_closing> <gmane_tag_quotation> <gmane_tag_visual_separator> <gmane_tag_mua_signature> <gmane_tag_visual_separator>"
