@@ -77,19 +77,14 @@
 
     "annotation_schemes": [
         {
-            "annotation_type": "multiselect",
-            "name": "Email Act/Intent",
-            "description": "Email Act/Intent",
+            "annotation_type": "radio",
+            "name": "Sender Authority",
+            "description": "Sender Authority",
             "labels": [
-                {"name": "[1] Request", "tooltip": "Asks (or orders) the recipient to perform some activity. A question is also considered a request for delivery of information.", "key_value": 1},
-                {"name": "[2] Propose", "tooltip": "Proposes a joint activity, asks the recipient to perform some activity, and commits the sender as well, provided the recipient agrees to the request.", "key_value": 2},
-                {"name": "[3] Commit/Agree", "tooltip": "Commits the sender to some future course of action, or confirms the sender’s intent to comply with some previously described course of action.", "key_value": 3},
-                {"name": "[4] Deliver/Informative", "tooltip": "Delivers something, e.g., information, a presentation, a website URL, the answer to a question, or an opinion.", "key_value": 4},
-                {"name": "[5] Amend", "tooltip": "Amends an earlier proposal. Like a proposal, the message involves both a commitment and a request. However, while a proposal is associated with a new task, an amendment is a suggested modification of an already-proposed task.", "key_value": 5},
-                {"name": "[6] Refuse", "tooltip": "Rejects a meeting/action/task or declines an invitation/proposal.", "key_value": 6},
-                {"name": "[7] Introduction", "tooltip": "Someone introducing themselves.", "key_value": 7},
-                {"name": "[8] Remind", "tooltip": "Reminds recipients of coming deadlines or threats to keep commitments.", "key_value": 8},
-                {"name": "[9] Thank you/Welcome", "tooltip": "Express gratitude, congratulate, apologize, or welcome the recipient(s).", "key_value": 9},
+                {"name": "[A] Sender > Recipient", "tooltip": "Downward hierarchy = sender is likely emailing someone of lower rank", "key_value": "a"},
+                {"name": "[S] Sender < Recipient", "tooltip": "Upward hierarchy = sender is likely emailing someone of higher rank", "key_value": "s"},
+                {"name": "[D] Sender ~= Recipient", "tooltip": "Lateral hierarchy = sender and recipient seem to have the same rank", "key_value": "d"},
+                {"name": "[F] Unclear", "tooltip": "Unclear who has higher rank", "key_value": "f"},
                 {"name": "Other"}
             ],
 
@@ -112,12 +107,39 @@
             "name": "Sender Expectation",
             "description": "Sender Expectation",
             "labels": [
-                {"name": "[Q] Ignore", "tooltip": "There is no realistic expectation that the recipients will properly read the email, let alone respond to them.", "key_value": "q"},
-                {"name": "[W] Accountable non-answer", "tooltip": "Recipient is expected to engage with the message or its attachments, but there is no reply required.", "key_value": "w"},
-                {"name": "[E] Postponed reply", "tooltip": "The message requires a reply but not immediately.", "key_value": "e"},
-                {"name": "[R] Immediate reply", "tooltip": "The message requires a reply as soon as possible.", "key_value": "r"},
+                {"name": "[Q] Response Expected", "tooltip": "Sender likely expects the recipient to respond to the message — e.g., to answer a question, engage with content/attachments and send a follow up email, take some action outside the email chain and send a confirmation that the action was taken, etc. Sender explicitly or implicitly expects a response, such as followup or confirmation of said engagement.", "key_value": "q"},
+                {"name": "[W] Response Not-Expected", "tooltip": "There is no indication in the email that the sender expects that the recipients will respond to the email.", "key_value": "w"},
+                {"name": "[E] Not Applicable", "tooltip": "System generated or spam content.", "key_value": "e"},
                 {"name": "Other"}
+            ],
 
+            # If true, the field will have an optional text box the user can
+            'has_free_response': {
+               "instruction": 'Please specify:',
+            },
+
+            # adding requirements for labels, when "required" is True, the annotators will be asked to finish the current instance to proceed
+            "label_requirement": {"required":True},
+
+            # If true, numbers [1-len(labels)] will be bound to each
+            # label. Aannotations with more than 10 are not supported with this
+            # simple keybinding and will need to use the full item specification
+            # to bind all labels to keys.
+            #"sequential_key_binding": True,
+        },
+        {
+            "annotation_type": "multiselect",
+            "name": "Email Act/Intent",
+            "description": "Email Act/Intent",
+            "labels": [
+                {"name": "[1] Sharing Information", "tooltip": "The sender would like to share information or content with the recipient(s). This could include answering a question posed by the recipient; or proactively sharing information such as FYI messages, progress updates, status updates, or documents, external links/resources/references.", "key_value": 1},
+                {"name": "[2] Requesting Information", "tooltip": "Denotes a scenario where the sender is requesting information that can be potentially responded to by sharing a document or a similar resource: asking a question, wanting more information, requesting explanations, followup queries, giving the recipient information or resources to take follow up actions if they wish but not asking for these steps, etc", "key_value": 2},
+                {"name": "[3] Requesting/Proposing an Action", "tooltip": "The sender is asking the recipient to perform some activities that require some effort other than writing back. These actions are typically not immediately doable or require additional effort / activities that need to be completed before writing back – e.g., refactoring some code, conducting a survey. BUT NOT a request for something that is primarily internet research like looking up libraries or links.", "key_value": 3},
+                {"name": "[4] Promising an Action", "tooltip": "The sender is committing to perform an action. Requires some form of affirmation - written agreement - from the sender’s side (definitive).", "key_value": 4},
+                {"name": "[5] Personal Communication", "tooltip": "The email includes some indication that the sender is making an interpersonal investment in the recipient. Includes indicators that you have a relationship outside the email thread, personal self-disclosures, engagement with the recipient’s personal feelings (better word), or other communication that goes beyond the subject of the email and addresses the recipient as a person. Does not include pleasantries like please, thank you, expressions of gratitude, etc.", "key_value": 5},
+                {"name": "[6] Pleasantries Only (mutually exclusive from the rest of options)", "tooltip": "The email contains only pleasantries or formalities (e.g., the whole email is a 'Thank you very much' or a 'Will try that, thanks!').", "key_value": 6},
+                {"name": "[7] Auto-generated or Spam (mutually exclusive from the rest of options)", "tooltip": "Email digests, auto-reminders, github or auto-change notification messages, do not reply emails, scam emails, etc.", "key_value": 7},
+                {"name": "Other"}
             ],
 
             # If true, the field will have an optional text box the user can
