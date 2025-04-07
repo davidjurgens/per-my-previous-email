@@ -1,4 +1,4 @@
-# Per my Previous Email
+# Causally Modeling the Linguistic and Social Factors that Predict Email Response
 
 ## Folder Structure
 Code goes under the source folder. Create new folders as necessary
